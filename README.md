@@ -26,9 +26,9 @@ Whether a person subscribes to a term deposit (yes/no).
 
 ## Sanity checklist
 
-[] Did you start with a simple model?
-[] Does training loss go to zero if I fit on a single batch?
-[] Did you toggle between train/eval mode? Yes.
-[] Did you zero out the previous gradients (optimizer.zero_grad) before calculating the new ones (loss.backward)?
-[] Does model training loss go down as I increase it's capacity?
-[] Does the model perform worse when I zero out my training data?
+* [] Did you start with a simple model?
+* [] Does training loss go to zero if I fit on a single batch?
+* [] Did you toggle between train/eval mode?
+* [] Did you zero out the previous gradients (optimizer.zero_grad) before calculating the new ones (loss.backward)?
+* [] Does model training loss go down as I increase it's capacity?
+* [] Does the model perform worse when I zero out my training data?
