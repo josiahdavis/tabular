@@ -1,14 +1,22 @@
-# Tabular
+# Tabular Neural Network
 
-Examples of training neural network on tabular data.
+Self-contained examples of training neural networks on tabular data.
 
-### Example 1: Quick Start
-
-**notebooks/train_neural_network_tabular.ipynb**:
+**train_neural_net**
 
 * Simple Feedforward Neural Network.
 * How to perform basic tasks in PyTorch: create DataLoader, training/evaluation loop, etc...
 * Comparison with untuned XGBoost.
+
+**train_transformer**
+
+* Replace simple Feedforward Neural Network with Transformer network.
+* Otherwise, same as before.
+
+**hpo_sweep**
+
+* Run a simple HPO sweep on a variety of hyperparameters.
+* Parallelize search on CPU using `Parallel` from `joblib`.
 
 ## Installation
 
@@ -22,13 +30,9 @@ conda deactivate tabular
 conda env remove -n tabular
 ```
 
-## Data
+## Development checklist
 
-Whether a person subscribes to a term deposit (yes/no).
-* https://archive.ics.uci.edu/ml/datasets/bank+marketing
-
-
-## Sanity checklist
+Here is a simple check-list, which I drew inspiration from Karpathy's [blog post](http://karpathy.github.io/2019/04/25/recipe/).
 
 * [ ] Did you start with a simple model?
 * [ ] Does training loss go to zero if I fit on a single batch?
