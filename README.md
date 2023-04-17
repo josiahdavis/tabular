@@ -18,6 +18,11 @@ Self-contained examples of training neural networks on tabular data.
 * Run a simple HPO sweep on a variety of hyperparameters.
 * Parallelize search on CPU using `Parallel` from `joblib`.
 
+**optimal_learning_rate**
+
+* Run a single epoch and observe change in loss as you gradually increase the learning rate.
+
+
 ## Installation
 
 ```
